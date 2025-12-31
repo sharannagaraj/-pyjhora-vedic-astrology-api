@@ -1,0 +1,10 @@
+fastapi>=0.100.0
+uvicorn[standard]>=0.23.0
+pydantic>=2.0.0
+python-multipart>=0.0.6
+PyJHora==4.5.5
+pyswisseph==2.10.3.2
+geocoder==1.38.1
+pytz==2025.2
+timezonefinder==8.2.0
+gunicorn>=21.0.0
