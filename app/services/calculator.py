@@ -49,15 +49,23 @@ class PyJHoraCalculator:
         swe.set_sid_mode(getattr(swe, f'SIDM_{ayanamsa}', swe.SIDM_LAHIRI))
 
         # Calculate Julian Day
+        # IMPORTANT: PyJHora expects LOCAL TIME in JD, not UT
+        # PyJHora internally converts to UTC using the timezone from place
         birth_time_str = birth_data['time']
         birth_time_local = datetime.strptime(birth_time_str, "%H:%M:%S")
+
+        # Use LOCAL time for JD calculation (PyJHora handles timezone internally)
+        local_time = (birth_time_local.hour + birth_time_local.minute/60.0 +
+                      birth_time_local.second/3600.0)
+        self.jd = swe.julday(year, month, day, local_time)
+
+        # For ayanamsa, we need the actual UT time
         tz_offset = timedelta(hours=birth_data['timezone_offset'])
         birth_time_utc = birth_time_local - tz_offset
-
         ut_time = (birth_time_utc.hour + birth_time_utc.minute/60.0 +
                    birth_time_utc.second/3600.0)
-        self.jd = swe.julday(year, month, day, ut_time)
-        self.ayanamsa_value = swe.get_ayanamsa_ut(self.jd)
+        jd_ut = swe.julday(year, month, day, ut_time)
+        self.ayanamsa_value = swe.get_ayanamsa_ut(jd_ut)
 
     def parse_chart_data(self, chart_data: List) -> Tuple[Dict, int, float]:
         """Parse PyJHora chart data"""
