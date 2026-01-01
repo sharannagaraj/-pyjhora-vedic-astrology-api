@@ -153,11 +153,14 @@ class PyJHoraCalculator:
         chart_data = charts.rasi_chart(self.jd, self.place)
         parsed, _, _ = self.parse_chart_data(chart_data)
 
-        moon_sign, moon_long = parsed.get(1, (0, 0))  # Moon is planet 1
+        moon_sign, moon_long_in_sign = parsed.get(1, (0, 0))  # Moon is planet 1
 
-        # Calculate nakshatra
-        nakshatra_num = int(moon_long / (360/27))
-        nakshatra_deg = moon_long % (360/27)
+        # Calculate absolute longitude for nakshatra
+        moon_abs_long = moon_sign * 30 + moon_long_in_sign
+
+        # Calculate nakshatra (27 nakshatras in 360 degrees)
+        nakshatra_num = int(moon_abs_long / (360/27))
+        nakshatra_deg = moon_abs_long % (360/27)
         nakshatra_names = [
             "Ashwini", "Bharani", "Krittika", "Rohini", "Mrigashira", "Ardra",
             "Punarvasu", "Pushya", "Ashlesha", "Magha", "Purva Phalguni",
