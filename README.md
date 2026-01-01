@@ -1,38 +1,76 @@
 # PyJHora Vedic Astrology API
 
-A production-ready FastAPI server for Vedic astrology calculations using the PyJHora library.
+A production-ready FastAPI server for comprehensive Vedic astrology calculations using the PyJHora library.
+
+## 🌟 Version 1.2.0 - New Features
+
+### ⚡ Comprehensive Endpoint (All-in-One)
+Get **everything in a single API call**:
+- D1, D9, D10 charts with all planetary positions
+- Maha Dasha and Antardasha periods
+- 7 Bhinna Ashtakavarga + Sarvashtakavarga
+- All Yogas (39 analyzed)
+- All Doshas (8 analyzed)
+
+**3-4x faster** than multiple API calls!
 
 ## Features
 
-- ✅ **Birth Charts (D1 Rasi)**
-- ✅ **Divisional Charts** (D2-D60: Navamsa, Dasamsa, etc.)
-- ✅ **Vimsottari Dasha** calculations with current period
-- ✅ **House-wise** planetary placements
+- ✅ **Comprehensive Analysis** - All data in one call
+- ✅ **Birth Charts** (D1-D60: Rasi, Navamsa, Dasamsa, etc.)
+- ✅ **Vimsottari Dasha** - Maha Dasha & Antardasha
+- ✅ **Ashtakavarga** - 7 Bhinna + Sarvashtakavarga
+- ✅ **Yogas & Doshas** - 39 Yogas, 8 Doshas analyzed
+- ✅ **Transits** - Current positions, Sade Sati
+- ✅ **Panchanga** - Extended with muhurtas
+- ✅ **Compatibility** - Ashtakoot matching
 - ✅ **Automatic validation** with Pydantic
 - ✅ **Interactive API docs** (Swagger/ReDoc)
 - ✅ **CORS enabled** for web apps
-- ✅ **Health check** endpoint
 
 ## API Endpoints
+
+### 🆕 Comprehensive (All-in-One)
+- `POST /api/v1/comprehensive/full-analysis` - **Everything in one call!**
 
 ### Charts
 - `POST /api/v1/charts/rasi` - D1 Birth Chart
 - `POST /api/v1/charts/navamsa` - D9 Navamsa Chart
-- `POST /api/v1/charts/dasamsa` - D10 Career Chart
-- `POST /api/v1/charts/divisional` - Any divisional chart
-- `POST /api/v1/charts/house-wise/{chart_type}` - House-wise placement
+- `POST /api/v1/charts/divisional` - Any divisional chart (D1-D60)
 
 ### Dashas
-- `POST /api/v1/dashas/vimsottari` - Vimsottari Dasha periods
+- `POST /api/v1/dashas/vimsottari` - Maha Dasha periods
+- `POST /api/v1/dashas/bhukti` - Antardasha periods
 - `POST /api/v1/dashas/current` - Current running Dasha
+
+### Yogas & Doshas
+- `POST /api/v1/yogas/` - All 39 Yogas
+- `POST /api/v1/doshas/` - All 8 Doshas
+
+### Strength
+- `POST /api/v1/strength/ashtakavarga` - 7 Bhinna + Sarvashtakavarga
+- `POST /api/v1/strength/shadbala` - Shadbala calculations
+- `POST /api/v1/strength/bhava-bala` - House strength
+
+### Transits
+- `POST /api/v1/transits/current` - Current planetary positions
+- `POST /api/v1/transits/sade-sati` - Sade Sati analysis
+- `POST /api/v1/transits/next-entries` - Next sign entries
+
+### Panchanga
+- `POST /api/v1/panchanga/` - Basic Panchanga
+- `POST /api/v1/panchanga/extended` - With muhurtas & timings
+
+### Compatibility
+- `POST /api/v1/compatibility/` - Ashtakoot matching
 
 ### Utility
 - `GET /` - API information
 - `GET /health` - Health check
-- `GET /api/v1/ayanamsa/list` - List ayanamsa systems
-- `GET /api/v1/charts/types` - List chart types
 - `GET /docs` - Interactive API documentation
 - `GET /redoc` - ReDoc documentation
+
+**Total:** 25+ endpoints
 
 ## Local Development
 
@@ -234,6 +272,10 @@ For issues or questions:
 
 ## Version
 
-- **API Version**: 1.0.0
+- **API Version**: 1.2.0
 - **PyJHora Version**: 4.5.5
 - **FastAPI Version**: 0.109.0
+
+## Quick Start
+
+See [DEPLOY_TO_RENDER.md](DEPLOY_TO_RENDER.md) for deployment instructions.
