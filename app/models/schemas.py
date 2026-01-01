@@ -125,3 +125,9 @@ class ErrorResponse(BaseModel):
     status: str = "error"
     error: str
     detail: Optional[str] = None
+
+class CompatibilityRequest(BaseModel):
+    """Request model for marriage compatibility calculation"""
+    boy_birth_data: BirthData
+    girl_birth_data: BirthData
+    ayanamsa: Optional[str] = Field("LAHIRI", description="Ayanamsa system")

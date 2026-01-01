@@ -50,3 +50,21 @@ async def get_current_dasha(request: DashaRequest):
             }
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
+
+@router.post("/bhukti")
+async def calculate_dasha_bhukti(request: DashaRequest):
+    """
+    Calculate Vimsottari Dasha with Bhukti (Sub-periods)
+
+    Returns all Maha Dasha and Bhukti (Antara Dasha) periods with current period info.
+    Each Bhukti period shows which Maha Dasha it belongs to and its duration.
+    """
+    try:
+        calculator = PyJHoraCalculator(
+            request.birth_data.dict(),
+            request.ayanamsa
+        )
+        result = calculator.calculate_dasha_bhukti("VIMSOTTARI")
+        return result
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=str(e))

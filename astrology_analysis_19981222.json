@@ -1,0 +1,1298 @@
+{
+  "status": "success",
+  "birth_data": {
+    "date": "1998-12-22",
+    "time": "17:12:00",
+    "timezone_offset": 5.5,
+    "latitude": 12.9716,
+    "longitude": 77.5946,
+    "place_name": "Bangalore, India"
+  },
+  "ayanamsa": "LAHIRI",
+  "charts": {
+    "d1_rasi": {
+      "name": "D1 - Rasi (Birth Chart)",
+      "ascendant": {
+        "sign": "Taurus",
+        "sign_id": 1,
+        "degree": 26.5631
+      },
+      "planets": [
+        {
+          "planet": "Sun",
+          "sign": "Sagittarius",
+          "sign_id": 8,
+          "longitude": 6.58,
+          "degree": 6,
+          "minute": 34,
+          "house": 8
+        },
+        {
+          "planet": "Moon",
+          "sign": "Capricorn",
+          "sign_id": 9,
+          "longitude": 17.6196,
+          "degree": 17,
+          "minute": 37,
+          "house": 9
+        },
+        {
+          "planet": "Mars",
+          "sign": "Virgo",
+          "sign_id": 5,
+          "longitude": 19.7278,
+          "degree": 19,
+          "minute": 43,
+          "house": 5
+        },
+        {
+          "planet": "Mercury",
+          "sign": "Scorpio",
+          "sign_id": 7,
+          "longitude": 15.1757,
+          "degree": 15,
+          "minute": 10,
+          "house": 7
+        },
+        {
+          "planet": "Jupiter",
+          "sign": "Aquarius",
+          "sign_id": 10,
+          "longitude": 26.8214,
+          "degree": 26,
+          "minute": 49,
+          "house": 10
+        },
+        {
+          "planet": "Venus",
+          "sign": "Sagittarius",
+          "sign_id": 8,
+          "longitude": 19.6229,
+          "degree": 19,
+          "minute": 37,
+          "house": 8
+        },
+        {
+          "planet": "Saturn",
+          "sign": "Aries",
+          "sign_id": 0,
+          "longitude": 2.9749,
+          "degree": 2,
+          "minute": 58,
+          "house": 12
+        },
+        {
+          "planet": "Rahu",
+          "sign": "Leo",
+          "sign_id": 4,
+          "longitude": 1.0601,
+          "degree": 1,
+          "minute": 3,
+          "house": 4
+        },
+        {
+          "planet": "Ketu",
+          "sign": "Aquarius",
+          "sign_id": 10,
+          "longitude": 1.0601,
+          "degree": 1,
+          "minute": 3,
+          "house": 10
+        }
+      ]
+    },
+    "d9_navamsa": {
+      "name": "D9 - Navamsa (Marriage/Spouse)",
+      "ascendant": {
+        "sign": "Leo",
+        "sign_id": 4,
+        "degree": 29.0678
+      },
+      "planets": [
+        {
+          "planet": "Sun",
+          "sign": "Taurus",
+          "sign_id": 1,
+          "longitude": 29.2204,
+          "degree": 29,
+          "minute": 13,
+          "house": 10
+        },
+        {
+          "planet": "Moon",
+          "sign": "Gemini",
+          "sign_id": 2,
+          "longitude": 8.5764,
+          "degree": 8,
+          "minute": 34,
+          "house": 11
+        },
+        {
+          "planet": "Mars",
+          "sign": "Gemini",
+          "sign_id": 2,
+          "longitude": 27.5498,
+          "degree": 27,
+          "minute": 32,
+          "house": 11
+        },
+        {
+          "planet": "Mercury",
+          "sign": "Scorpio",
+          "sign_id": 7,
+          "longitude": 16.5811,
+          "degree": 16,
+          "minute": 34,
+          "house": 4
+        },
+        {
+          "planet": "Jupiter",
+          "sign": "Gemini",
+          "sign_id": 2,
+          "longitude": 1.3923,
+          "degree": 1,
+          "minute": 23,
+          "house": 11
+        },
+        {
+          "planet": "Venus",
+          "sign": "Virgo",
+          "sign_id": 5,
+          "longitude": 26.6058,
+          "degree": 26,
+          "minute": 36,
+          "house": 2
+        },
+        {
+          "planet": "Saturn",
+          "sign": "Aries",
+          "sign_id": 0,
+          "longitude": 26.7745,
+          "degree": 26,
+          "minute": 46,
+          "house": 9
+        },
+        {
+          "planet": "Rahu",
+          "sign": "Aries",
+          "sign_id": 0,
+          "longitude": 9.5408,
+          "degree": 9,
+          "minute": 32,
+          "house": 9
+        },
+        {
+          "planet": "Ketu",
+          "sign": "Libra",
+          "sign_id": 6,
+          "longitude": 9.5408,
+          "degree": 9,
+          "minute": 32,
+          "house": 3
+        }
+      ]
+    },
+    "d10_dasamsa": {
+      "name": "D10 - Dasamsa (Career)",
+      "ascendant": {
+        "sign": "Virgo",
+        "sign_id": 5,
+        "degree": 25.6309
+      },
+      "planets": [
+        {
+          "planet": "Sun",
+          "sign": "Aquarius",
+          "sign_id": 10,
+          "longitude": 5.8004,
+          "degree": 5,
+          "minute": 48,
+          "house": 6
+        },
+        {
+          "planet": "Moon",
+          "sign": "Aquarius",
+          "sign_id": 10,
+          "longitude": 26.1961,
+          "degree": 26,
+          "minute": 11,
+          "house": 6
+        },
+        {
+          "planet": "Mars",
+          "sign": "Scorpio",
+          "sign_id": 7,
+          "longitude": 17.2776,
+          "degree": 17,
+          "minute": 16,
+          "house": 3
+        },
+        {
+          "planet": "Mercury",
+          "sign": "Sagittarius",
+          "sign_id": 8,
+          "longitude": 1.7567,
+          "degree": 1,
+          "minute": 45,
+          "house": 4
+        },
+        {
+          "planet": "Jupiter",
+          "sign": "Libra",
+          "sign_id": 6,
+          "longitude": 28.2136,
+          "degree": 28,
+          "minute": 12,
+          "house": 2
+        },
+        {
+          "planet": "Venus",
+          "sign": "Gemini",
+          "sign_id": 2,
+          "longitude": 16.2286,
+          "degree": 16,
+          "minute": 13,
+          "house": 10
+        },
+        {
+          "planet": "Saturn",
+          "sign": "Aries",
+          "sign_id": 0,
+          "longitude": 29.7495,
+          "degree": 29,
+          "minute": 44,
+          "house": 8
+        },
+        {
+          "planet": "Rahu",
+          "sign": "Leo",
+          "sign_id": 4,
+          "longitude": 10.6009,
+          "degree": 10,
+          "minute": 36,
+          "house": 12
+        },
+        {
+          "planet": "Ketu",
+          "sign": "Aquarius",
+          "sign_id": 10,
+          "longitude": 10.6009,
+          "degree": 10,
+          "minute": 36,
+          "house": 6
+        }
+      ]
+    }
+  },
+  "dashas": {
+    "maha_dasha": {
+      "system": "Vimsottari",
+      "moon_nakshatra": {
+        "number": 22,
+        "name": "Shravana",
+        "lord": "Moon"
+      },
+      "periods": [
+        {
+          "lord": "Moon",
+          "start_date": "1993-04-05",
+          "end_date": "2003-04-05",
+          "duration_years": 10
+        },
+        {
+          "lord": "Mars",
+          "start_date": "2003-04-05",
+          "end_date": "2010-04-04",
+          "duration_years": 7
+        },
+        {
+          "lord": "Rahu",
+          "start_date": "2010-04-04",
+          "end_date": "2028-04-03",
+          "duration_years": 18
+        },
+        {
+          "lord": "Jupiter",
+          "start_date": "2028-04-03",
+          "end_date": "2044-04-03",
+          "duration_years": 16
+        },
+        {
+          "lord": "Saturn",
+          "start_date": "2044-04-03",
+          "end_date": "2063-04-03",
+          "duration_years": 19
+        },
+        {
+          "lord": "Venus",
+          "start_date": "2063-04-03",
+          "end_date": "2080-04-02",
+          "duration_years": 17
+        },
+        {
+          "lord": "Ketu",
+          "start_date": "2080-04-02",
+          "end_date": "2087-04-02",
+          "duration_years": 7
+        },
+        {
+          "lord": "Mercury",
+          "start_date": "2087-04-02",
+          "end_date": "2107-04-03",
+          "duration_years": 20
+        },
+        {
+          "lord": "Sun",
+          "start_date": "2107-04-03",
+          "end_date": "2113-04-02",
+          "duration_years": 6
+        }
+      ],
+      "current_period": {
+        "lord": "Rahu",
+        "start_date": "2010-04-04",
+        "end_date": "2028-04-03",
+        "duration_years": 18,
+        "elapsed_years": 15.75,
+        "remaining_years": 2.25
+      }
+    },
+    "antardasha": {
+      "system": "Vimsottari",
+      "total_periods": 81,
+      "periods": [
+        {
+          "maha_dasha_lord": "Moon",
+          "bhukti_lord": "Moon",
+          "start_date": "1993-04-05 09:13:56"
+        },
+        {
+          "maha_dasha_lord": "Moon",
+          "bhukti_lord": "Mars",
+          "start_date": "1994-02-03 18:21:35"
+        },
+        {
+          "maha_dasha_lord": "Moon",
+          "bhukti_lord": "Rahu",
+          "start_date": "1994-09-04 19:56:55"
+        },
+        {
+          "maha_dasha_lord": "Moon",
+          "bhukti_lord": "Jupiter",
+          "start_date": "1996-03-05 17:10:40"
+        },
+        {
+          "maha_dasha_lord": "Moon",
+          "bhukti_lord": "Saturn",
+          "start_date": "1997-07-05 17:22:53"
+        },
+        {
+          "maha_dasha_lord": "Moon",
+          "bhukti_lord": "Mercury",
+          "start_date": "1999-02-04 01:07:24"
+        },
+        {
+          "maha_dasha_lord": "Moon",
+          "bhukti_lord": "Ketu",
+          "start_date": "2000-07-05 11:50:23"
+        },
+        {
+          "maha_dasha_lord": "Moon",
+          "bhukti_lord": "Venus",
+          "start_date": "2001-02-03 13:25:44"
+        },
+        {
+          "maha_dasha_lord": "Moon",
+          "bhukti_lord": "Sun",
+          "start_date": "2002-10-05 07:41:00"
+        },
+        {
+          "maha_dasha_lord": "Mars",
+          "bhukti_lord": "Mars",
+          "start_date": "2003-04-05 22:45:35"
+        },
+        {
+          "maha_dasha_lord": "Mars",
+          "bhukti_lord": "Rahu",
+          "start_date": "2003-09-02 02:16:19"
+        },
+        {
+          "maha_dasha_lord": "Mars",
+          "bhukti_lord": "Jupiter",
+          "start_date": "2004-09-19 14:43:57"
+        },
+        {
+          "maha_dasha_lord": "Mars",
+          "bhukti_lord": "Saturn",
+          "start_date": "2005-08-26 12:28:30"
+        },
+        {
+          "maha_dasha_lord": "Mars",
+          "bhukti_lord": "Mercury",
+          "start_date": "2006-10-05 08:17:39"
+        },
+        {
+          "maha_dasha_lord": "Mars",
+          "bhukti_lord": "Ketu",
+          "start_date": "2007-10-02 13:23:45"
+        },
+        {
+          "maha_dasha_lord": "Mars",
+          "bhukti_lord": "Venus",
+          "start_date": "2008-02-28 16:54:29"
+        },
+        {
+          "maha_dasha_lord": "Mars",
+          "bhukti_lord": "Sun",
+          "start_date": "2009-04-29 20:05:11"
+        },
+        {
+          "maha_dasha_lord": "Mars",
+          "bhukti_lord": "Moon",
+          "start_date": "2009-09-04 16:14:23"
+        },
+        {
+          "maha_dasha_lord": "Rahu",
+          "bhukti_lord": "Rahu",
+          "start_date": "2010-04-05 17:49:44"
+        },
+        {
+          "maha_dasha_lord": "Rahu",
+          "bhukti_lord": "Jupiter",
+          "start_date": "2012-12-16 22:26:28"
+        },
+        {
+          "maha_dasha_lord": "Rahu",
+          "bhukti_lord": "Saturn",
+          "start_date": "2015-05-12 13:12:28"
+        },
+        {
+          "maha_dasha_lord": "Rahu",
+          "bhukti_lord": "Mercury",
+          "start_date": "2018-03-18 12:44:35"
+        },
+        {
+          "maha_dasha_lord": "Rahu",
+          "bhukti_lord": "Ketu",
+          "start_date": "2020-10-04 22:25:57"
+        },
+        {
+          "maha_dasha_lord": "Rahu",
+          "bhukti_lord": "Venus",
+          "start_date": "2021-10-23 10:53:35"
+        },
+        {
+          "maha_dasha_lord": "Rahu",
+          "bhukti_lord": "Sun",
+          "start_date": "2024-10-23 05:21:04"
+        },
+        {
+          "maha_dasha_lord": "Rahu",
+          "bhukti_lord": "Moon",
+          "start_date": "2025-09-16 22:53:19"
+        },
+        {
+          "maha_dasha_lord": "Rahu",
+          "bhukti_lord": "Mars",
+          "start_date": "2027-03-18 20:07:04"
+        },
+        {
+          "maha_dasha_lord": "Jupiter",
+          "bhukti_lord": "Jupiter",
+          "start_date": "2028-04-05 08:34:41"
+        },
+        {
+          "maha_dasha_lord": "Jupiter",
+          "bhukti_lord": "Saturn",
+          "start_date": "2030-05-24 13:42:14"
+        },
+        {
+          "maha_dasha_lord": "Jupiter",
+          "bhukti_lord": "Mercury",
+          "start_date": "2032-12-04 21:17:27"
+        },
+        {
+          "maha_dasha_lord": "Jupiter",
+          "bhukti_lord": "Ketu",
+          "start_date": "2035-03-12 19:14:13"
+        },
+        {
+          "maha_dasha_lord": "Jupiter",
+          "bhukti_lord": "Venus",
+          "start_date": "2036-02-16 16:58:47"
+        },
+        {
+          "maha_dasha_lord": "Jupiter",
+          "bhukti_lord": "Sun",
+          "start_date": "2038-10-17 17:23:13"
+        },
+        {
+          "maha_dasha_lord": "Jupiter",
+          "bhukti_lord": "Moon",
+          "start_date": "2039-08-05 22:18:33"
+        },
+        {
+          "maha_dasha_lord": "Jupiter",
+          "bhukti_lord": "Mars",
+          "start_date": "2040-12-04 22:30:46"
+        },
+        {
+          "maha_dasha_lord": "Jupiter",
+          "bhukti_lord": "Rahu",
+          "start_date": "2041-11-10 20:15:19"
+        },
+        {
+          "maha_dasha_lord": "Saturn",
+          "bhukti_lord": "Saturn",
+          "start_date": "2044-04-05 11:01:19"
+        },
+        {
+          "maha_dasha_lord": "Saturn",
+          "bhukti_lord": "Mercury",
+          "start_date": "2047-04-09 06:31:53"
+        },
+        {
+          "maha_dasha_lord": "Saturn",
+          "bhukti_lord": "Ketu",
+          "start_date": "2049-12-17 10:05:33"
+        },
+        {
+          "maha_dasha_lord": "Saturn",
+          "bhukti_lord": "Venus",
+          "start_date": "2051-01-26 05:54:42"
+        },
+        {
+          "maha_dasha_lord": "Saturn",
+          "bhukti_lord": "Sun",
+          "start_date": "2054-03-27 21:23:43"
+        },
+        {
+          "maha_dasha_lord": "Saturn",
+          "bhukti_lord": "Moon",
+          "start_date": "2055-03-09 21:14:26"
+        },
+        {
+          "maha_dasha_lord": "Saturn",
+          "bhukti_lord": "Mars",
+          "start_date": "2056-10-08 04:58:56"
+        },
+        {
+          "maha_dasha_lord": "Saturn",
+          "bhukti_lord": "Rahu",
+          "start_date": "2057-11-17 00:48:06"
+        },
+        {
+          "maha_dasha_lord": "Saturn",
+          "bhukti_lord": "Jupiter",
+          "start_date": "2060-09-23 00:20:13"
+        },
+        {
+          "maha_dasha_lord": "Mercury",
+          "bhukti_lord": "Mercury",
+          "start_date": "2063-04-06 07:55:26"
+        },
+        {
+          "maha_dasha_lord": "Mercury",
+          "bhukti_lord": "Ketu",
+          "start_date": "2065-09-01 23:44:30"
+        },
+        {
+          "maha_dasha_lord": "Mercury",
+          "bhukti_lord": "Venus",
+          "start_date": "2066-08-30 04:50:35"
+        },
+        {
+          "maha_dasha_lord": "Mercury",
+          "bhukti_lord": "Sun",
+          "start_date": "2069-06-30 02:16:33"
+        },
+        {
+          "maha_dasha_lord": "Mercury",
+          "bhukti_lord": "Moon",
+          "start_date": "2070-05-06 13:30:21"
+        },
+        {
+          "maha_dasha_lord": "Mercury",
+          "bhukti_lord": "Mars",
+          "start_date": "2071-10-06 00:13:20"
+        },
+        {
+          "maha_dasha_lord": "Mercury",
+          "bhukti_lord": "Rahu",
+          "start_date": "2072-10-02 05:19:25"
+        },
+        {
+          "maha_dasha_lord": "Mercury",
+          "bhukti_lord": "Jupiter",
+          "start_date": "2075-04-21 15:00:47"
+        },
+        {
+          "maha_dasha_lord": "Mercury",
+          "bhukti_lord": "Saturn",
+          "start_date": "2077-07-27 12:57:33"
+        },
+        {
+          "maha_dasha_lord": "Ketu",
+          "bhukti_lord": "Ketu",
+          "start_date": "2080-04-05 16:31:13"
+        },
+        {
+          "maha_dasha_lord": "Ketu",
+          "bhukti_lord": "Venus",
+          "start_date": "2080-09-01 20:01:58"
+        },
+        {
+          "maha_dasha_lord": "Ketu",
+          "bhukti_lord": "Sun",
+          "start_date": "2081-11-01 23:12:39"
+        },
+        {
+          "maha_dasha_lord": "Ketu",
+          "bhukti_lord": "Moon",
+          "start_date": "2082-03-09 19:21:52"
+        },
+        {
+          "maha_dasha_lord": "Ketu",
+          "bhukti_lord": "Mars",
+          "start_date": "2082-10-08 20:57:13"
+        },
+        {
+          "maha_dasha_lord": "Ketu",
+          "bhukti_lord": "Rahu",
+          "start_date": "2083-03-07 00:27:57"
+        },
+        {
+          "maha_dasha_lord": "Ketu",
+          "bhukti_lord": "Jupiter",
+          "start_date": "2084-03-24 12:55:34"
+        },
+        {
+          "maha_dasha_lord": "Ketu",
+          "bhukti_lord": "Saturn",
+          "start_date": "2085-02-28 10:40:08"
+        },
+        {
+          "maha_dasha_lord": "Ketu",
+          "bhukti_lord": "Mercury",
+          "start_date": "2086-04-09 06:29:17"
+        },
+        {
+          "maha_dasha_lord": "Venus",
+          "bhukti_lord": "Venus",
+          "start_date": "2087-04-06 11:35:22"
+        },
+        {
+          "maha_dasha_lord": "Venus",
+          "bhukti_lord": "Sun",
+          "start_date": "2090-08-06 00:05:55"
+        },
+        {
+          "maha_dasha_lord": "Venus",
+          "bhukti_lord": "Moon",
+          "start_date": "2091-08-06 06:15:05"
+        },
+        {
+          "maha_dasha_lord": "Venus",
+          "bhukti_lord": "Mars",
+          "start_date": "2093-04-06 00:30:21"
+        },
+        {
+          "maha_dasha_lord": "Venus",
+          "bhukti_lord": "Rahu",
+          "start_date": "2094-06-06 03:41:03"
+        },
+        {
+          "maha_dasha_lord": "Venus",
+          "bhukti_lord": "Jupiter",
+          "start_date": "2097-06-05 22:08:32"
+        },
+        {
+          "maha_dasha_lord": "Venus",
+          "bhukti_lord": "Saturn",
+          "start_date": "2100-02-04 22:32:59"
+        },
+        {
+          "maha_dasha_lord": "Venus",
+          "bhukti_lord": "Mercury",
+          "start_date": "2103-04-07 14:02:00"
+        },
+        {
+          "maha_dasha_lord": "Venus",
+          "bhukti_lord": "Ketu",
+          "start_date": "2106-02-05 11:27:58"
+        },
+        {
+          "maha_dasha_lord": "Sun",
+          "bhukti_lord": "Sun",
+          "start_date": "2107-04-07 14:38:39"
+        },
+        {
+          "maha_dasha_lord": "Sun",
+          "bhukti_lord": "Moon",
+          "start_date": "2107-07-26 04:29:24"
+        },
+        {
+          "maha_dasha_lord": "Sun",
+          "bhukti_lord": "Mars",
+          "start_date": "2108-01-24 19:33:59"
+        },
+        {
+          "maha_dasha_lord": "Sun",
+          "bhukti_lord": "Rahu",
+          "start_date": "2108-05-31 15:43:12"
+        },
+        {
+          "maha_dasha_lord": "Sun",
+          "bhukti_lord": "Jupiter",
+          "start_date": "2109-04-25 09:15:26"
+        },
+        {
+          "maha_dasha_lord": "Sun",
+          "bhukti_lord": "Saturn",
+          "start_date": "2110-02-11 14:10:46"
+        },
+        {
+          "maha_dasha_lord": "Sun",
+          "bhukti_lord": "Mercury",
+          "start_date": "2111-01-24 14:01:29"
+        },
+        {
+          "maha_dasha_lord": "Sun",
+          "bhukti_lord": "Ketu",
+          "start_date": "2111-12-01 01:15:16"
+        },
+        {
+          "maha_dasha_lord": "Sun",
+          "bhukti_lord": "Venus",
+          "start_date": "2112-04-06 21:24:28"
+        }
+      ],
+      "current_period": {
+        "maha_dasha_lord": "Rahu",
+        "bhukti_lord": "Moon",
+        "start_date": "2025-09-16",
+        "end_date": "2027-03-18",
+        "duration_months": 18.0,
+        "elapsed_months": 3.52,
+        "remaining_months": 14.49
+      }
+    }
+  },
+  "ashtakavarga": {
+    "bhinna_ashtakavarga": {
+      "description": "7 Individual Planet Charts (Bindu strength by house)",
+      "planets": {
+        "Sun": {
+          "bindus": [
+            4,
+            3,
+            5,
+            6,
+            3,
+            3,
+            7,
+            3,
+            4,
+            3,
+            2,
+            5
+          ],
+          "total": 48
+        },
+        "Moon": {
+          "bindus": [
+            1,
+            3,
+            6,
+            4,
+            4,
+            6,
+            5,
+            4,
+            1,
+            3,
+            7,
+            5
+          ],
+          "total": 49
+        },
+        "Mars": {
+          "bindus": [
+            4,
+            3,
+            2,
+            5,
+            0,
+            3,
+            5,
+            4,
+            3,
+            3,
+            3,
+            4
+          ],
+          "total": 39
+        },
+        "Mercury": {
+          "bindus": [
+            6,
+            4,
+            3,
+            5,
+            5,
+            3,
+            7,
+            4,
+            5,
+            4,
+            4,
+            4
+          ],
+          "total": 54
+        },
+        "Jupiter": {
+          "bindus": [
+            4,
+            4,
+            4,
+            4,
+            6,
+            8,
+            4,
+            4,
+            4,
+            3,
+            5,
+            6
+          ],
+          "total": 56
+        },
+        "Venus": {
+          "bindus": [
+            3,
+            3,
+            3,
+            6,
+            5,
+            5,
+            3,
+            5,
+            6,
+            5,
+            4,
+            4
+          ],
+          "total": 52
+        },
+        "Saturn": {
+          "bindus": [
+            1,
+            2,
+            6,
+            5,
+            4,
+            3,
+            4,
+            3,
+            2,
+            3,
+            3,
+            3
+          ],
+          "total": 39
+        },
+        "Ascendant": {
+          "bindus": [
+            3,
+            2,
+            5,
+            5,
+            3,
+            4,
+            4,
+            5,
+            4,
+            2,
+            7,
+            5
+          ],
+          "total": 49
+        }
+      }
+    },
+    "sarvashtakavarga": {
+      "description": "Combined Ashtakavarga (Total strength across all planets)",
+      "data": {
+        "bindus_per_house": [
+          23,
+          22,
+          29,
+          35,
+          27,
+          31,
+          35,
+          27,
+          25,
+          24,
+          28,
+          31
+        ],
+        "total_bindus": 337,
+        "strongest_house": 4,
+        "weakest_house": 2
+      }
+    }
+  },
+  "yogas": {
+    "total_analyzed": 39,
+    "total_present": 0,
+    "present_yogas": [],
+    "all_yogas": [
+      {
+        "name": "vesi_yoga",
+        "chart": "D2",
+        "title": "Vesai Yoga",
+        "description": "There is a planet other than Moon in the 2nd house from Sun",
+        "effect": "You will have a balanced outlook. You are truthful, tall and sluggish. You will be happy and comfortable even with little wealth."
+      },
+      {
+        "name": "vosi_yoga",
+        "chart": "D1",
+        "title": "Vosi Yoga",
+        "description": "There is a planet other than Moon in the 12th house from Sun",
+        "effect": "You will be skillful, charitable, famous, learned and strong."
+      },
+      {
+        "name": "ubhayachara_yoga",
+        "chart": "D2",
+        "title": "Ubhayachara Yoga",
+        "description": "There are planets other than Moon in the 2nd and 12th houses from Sun",
+        "effect": "You will have all comforts. You will be like a king or an equal"
+      },
+      {
+        "name": "sunaphaa_yoga",
+        "chart": "D1",
+        "title": "Sunaphaa Yoga",
+        "description": "There are planets other than Sun in the 2nd house from Moon",
+        "effect": "You will become a king or an equal. You are intelligent, wealthy and famous. You will have self-earned wealth."
+      },
+      {
+        "name": "anaphaa_yoga",
+        "chart": "D2",
+        "title": "Anaphaa Yoga",
+        "description": "There are planets other than Sun in the 12th house from Moon",
+        "effect": "You will become a king with good looks. Your body is likely free from disease. You are a person of character and have great reputation. You are surrounded by comforts."
+      },
+      {
+        "name": "duradhara_yoga",
+        "chart": "D2",
+        "title": "Duradhara Yoga",
+        "description": "There are planets other than Sun in the 2nd and 12th houses from Moon.",
+        "effect": "You will enjoy many pleasures. You are charitable. You will wealth and vehicles. You will have good servants."
+      },
+      {
+        "name": "paasa_yoga",
+        "chart": "D3",
+        "title": "Paasa Yoga",
+        "description": "The seven planets occupy exactly 5 distinct signs among them.",
+        "effect": "One born with this yoga has the risk of being imprisoned. This person is capable in their work. This person is talkataive. This person has many servants. This person lacks character. Paasa means a noose."
+      },
+      {
+        "name": "subha_yoga",
+        "chart": "D3",
+        "title": "Subha Yoga",
+        "description": "Lagna has benefics or has “subha kartari – benefics in 12th and 2nd house from Lagna.",
+        "effect": " One born with this yoga has eloquence, good looks and character"
+      },
+      {
+        "name": "asubha_yoga",
+        "chart": "D1",
+        "title": "Asubha Yoga",
+        "description": "Lagna has malefics or has “paapa kartari or maleefics in 12th and 2nd house from Lagna.",
+        "effect": "One born with this yoga has many desires and is sinful and enjoys the wealth of others."
+      },
+      {
+        "name": "bhaarathi_yoga",
+        "chart": "D1",
+        "title": "Bhaarathi Yoga",
+        "description": "If the lord of the sign occupied in navamsa by 2nd, 5th or 11th lord exalted and joins the 9th lord, then this yoga is present.",
+        "effect": "One born with this yoga is a great scholar. Person is intelligent, religious, good-looking and famous. Bhaarathi is another name of Saraswathi, the goddess of learning."
+      },
+      {
+        "name": "vasumati_yoga",
+        "chart": "D1",
+        "title": "Vasumati Yoga",
+        "description": "If benefics occupy upachayas, then this yoga is present.",
+        "effect": "For it to give full results, malefics should not occupy upachayas and the benefics occupying upachayas should be strong. One born with this yoga has abundant wealth. Vasumati means earth."
+      },
+      {
+        "name": "adhi_yoga",
+        "chart": "D3",
+        "title": "Adhi Yoga",
+        "description": "Natural benefics occupy 6th, 7th and 8th from Moon",
+        "effect": "You may become a king or a minister or an army chief, depending on the strength of the planets involved"
+      },
+      {
+        "name": "amala_yoga",
+        "chart": "D3",
+        "title": "Amala Yoga",
+        "description": "There are only natural benefics present in the 10th house from lagna or Moon.",
+        "effect": "One born with this yoga has ever-lasting fame. The person is respected by kings. Person has luxuries and is virtuous. Person helps others. Amala means pure. Because the 10th house shows one's' conduct in society, situation of only benefics there makes one’s conduct in the society very pure."
+      },
+      {
+        "name": "kaahala_yoga",
+        "chart": "D16",
+        "title": "Kaahala Yoga",
+        "description": "If (1) the 4th lord and Jupiter32 are in mutual quadrants and (2) lagna lord is strong, then this yoga is present. Alternately, this yoga is present if the 4th lord is exalted or in own sign and the 10th lord joins him.",
+        "effect": "One born with this yoga is strong, bold, cunning and leads a large army. Person owns a few villages. Kaahala means excessive. It also means mischievous."
+      },
+      {
+        "name": "bheri_yoga",
+        "chart": "D4",
+        "title": "Bheri Yoga",
+        "description": "]If (1) the 9th lord is strong and (2) 1st, 2nd, 7th and 12th houses are occupied by planets, then this yoga is present. Alternately, this is yoga is present if (1) the 9th lord is strong and (2) Jupiter, Venus and lagna lord are in mutual quadrants.",
+        "effect": "One born with this yoga is blessed with wealth, spouse and children. Person can be a king. Person has fame and character. Person is virtuous and religious. Person enjoys pleasures. Bheri means a kettledrum."
+      },
+      {
+        "name": "matsya_yoga",
+        "chart": "D1",
+        "title": "Matsya Yoga",
+        "description": "If (1) benefics are in lagna and 9th, (2) some planets are in 5th, and, (3) malefics are in chaturasras (4th and 8th houses), then this yoga is present.",
+        "effect": "One born with this yoga becomes an astrologer or a seer. Person is a personification of kindness, character and intelligence. Person is strong and good-looking. Person is famous and learned. Person is a tapasvi (austere pursuer). Matsya means a fish."
+      },
+      {
+        "name": "hari_yoga",
+        "chart": "D108",
+        "title": "Hari Yoga",
+        "description": "If benefics occupy the 2nd, 12th and 8th houses counted from the 2nd lord, then this yoga is present.",
+        "effect": "One born with this yoga is happy, learned and blessed with wealth and children. Hari is a name of Lord Vishnu. The 2nd house is the house of food and money and it is a trine from karma sthana – the 10th house. It stands for sustenance and its lord represents Hari – Sustainer of Hindu Trinity – in a chart."
+      },
+      {
+        "name": "trilochana_yoga",
+        "chart": "D3",
+        "title": "Trilochana Yoga",
+        "description": "If Sun, Moon and Mars are in mutual trines, then this yoga is present.",
+        "effect": "One born with this yoga is wealthy, intelligent, long-lived and victorious over enemies. Person achieves everything without many obstacles. Trilochana means 'one with three eyes'. It is another name of Lord Siva, who has a hidden eye in His forehead."
+      },
+      {
+        "name": "sarpa_yoga",
+        "chart": "D7",
+        "title": "Sarpa Yoga",
+        "description": "Three quadrants are occupied by natural malefic planets.",
+        "effect": "One born with this yoga is miserable, unhappy, cruel, poor and dependent on others for food. This is a very bad combination."
+      },
+      {
+        "name": "koota_yoga",
+        "chart": "D81",
+        "title": "Koota Yoga",
+        "description": "All the planets occupy the 7 signs from the 4th house.",
+        "effect": "One born with this yoga becomes a jailer. The person is a liar. The person lives in hills and forts. The person is poor and cruel. Koota means a group. It has several other meanings."
+      },
+      {
+        "name": "ardha_chandra_yoga",
+        "chart": "D81",
+        "title": "Ardha Chandra Yoga",
+        "description": "All the planets occupy the 7 signs starting from a panapara or an apoklima.",
+        "effect": "One born with this yoga becomes an army chief. This person has a good physique. Kings like this person. This person is strong and possesses gems, gold and many ornaments. Ardha Chandra means half-Moon."
+      },
+      {
+        "name": "daama_yoga",
+        "chart": "D1",
+        "title": "Daama Yoga",
+        "description": "The seven planets occupy exactly 6 distinct signs among them.",
+        "effect": "One born with this yoga is very rich and famous. This person has many children. This person has many gems. This person helps others. Daama means a wreath. Some authors call this Daamini yoga."
+      },
+      {
+        "name": "veenaa_yoga",
+        "chart": "D2",
+        "title": "Veenaa Yoga",
+        "description": "The seven planets occupy exactly 7 distinct signs among them.",
+        "effect": "One born with this yoga likes music, dance and songs. This person has many servants. This person is wealthy, skillful and a leader of men. Veenaa is a stringed musical instrument. This is also called Vallaki yoga by some authors."
+      },
+      {
+        "name": "sankha_yoga",
+        "chart": "D2",
+        "title": "Sankha Yoga",
+        "description": "If (1) lagna lord is strong and (2) 5th and 6th lords are in mutual quadrants, then this yoga is present. Alternately, this yoga is present if (1) lagna lord and 10th lord are together in a movable sign and (2) the 9th lord is strong.",
+        "effect": "One born with this yoga is blessed with wealth, spouse and children. He is kind, pious, intelligent and long-lived. Sankha means a conch shell."
+      },
+      {
+        "name": "mridanga_yoga",
+        "chart": "D8",
+        "title": "Mridanga Yoga",
+        "description": "If (1) there are planets in own and exaltation signs in quadrants and trines and (2) lagna lord is strong, then this yoga is present.",
+        "effect": "One born with this yoga is a king or an equal and is happy. Mridanga is a rich and elegant percussion instrument popular in south India."
+      },
+      {
+        "name": "harsha_yoga",
+        "chart": "D40",
+        "title": "Harsha Yoga",
+        "description": "If the 6th lord occupies the 6th house, then this yoga is present.",
+        "effect": "One born with this yoga is happy, strong, good-natured and invincible. Harsha means joyous."
+      },
+      {
+        "name": "sreenaatha_yoga",
+        "chart": "D3",
+        "title": "Sreenaatha Yoga",
+        "description": "If (1) the 7th lord is exalted in 10th and (2) 10th lord is with 9th lord, then this yoga is present.",
+        "effect": "One born with this yoga becomes a great king equal to Indra – king of gods. Sreenaatha means the lord of great wealth and prosperity. It also means Vishnu."
+      },
+      {
+        "name": "brahma_yoga",
+        "chart": "D3",
+        "title": "Brahma Yoga",
+        "description": "If benefics occupy the 4th, 10th and 11th houses counted from lagna lord, then this yoga is present. Another variation of Brahma yoga: If (1) Jupiter is in a quadrant from the 9th lord, (2) Venus is in a quadrant from the 11th lord, and, (3) Mercury is in a quadrant from the 1st lord or 10th lord, then this yoga is present.",
+        "effect": "One born with this yoga is happy, learned and blessed with wealth and children. Brahma is the creator of this universe. Lagna rules birth and the Creator is represented in a chart by lagna lord."
+      },
+      {
+        "name": "hamsa_yoga",
+        "chart": "D3",
+        "title": "Hamsa Yoga",
+        "description": "Jupiter should be in Sagitarius, Pisces or Capricornn and he should be in 1st, 4th, 7th or 10th from lagna.",
+        "effect": "You are a great man of ethery nature. You are swan-like. You have spiritual strength and purity. You are respected by everyone. You are very passionate. You may become a king. You may have all comforts. You enjoy life fully. You are a clever conversationalist and endowed with good speech."
+      },
+      {
+        "name": "maalaa_yoga",
+        "chart": "D12",
+        "title": "Maalaa Yoga",
+        "description": "Three quadrants are occupied by natural benefics.",
+        "effect": "You will be always happy. You will have nice clothes, vehicles, luxuries and friendship of many women."
+      },
+      {
+        "name": "vajra_yoga",
+        "chart": "D24",
+        "title": "Vajra Yoga",
+        "description": "Lagna and the 7th houses are occupied by natural benefic planet and the 4th and 10th houses are occupied by natural malefic planets.",
+        "effect": "One born with this yoga is happy in the early and late parts of life. This person has valour. This person is not fortunate, but has no desires either. This person fights. Vajra means a diamond."
+      },
+      {
+        "name": "guru_mangala_yoga",
+        "chart": "D8",
+        "title": "guru_mangala_yoga",
+        "description": "If Jupiter and Mars are together or in the 7th house from each other, then this yoga is present.",
+        "effect": "One born with this yoga is righteous and energetic. The person's 'energies are channelled in dharmic paths."
+      },
+      {
+        "name": "parvata_yoga",
+        "chart": "D12",
+        "title": "Parvata Yoga",
+        "description": "If (1) quadrants are occupied only by benefics and (2) the 7th and 8th houses are either vacant or occupied only by benefics",
+        "effect": "One born with this yoga is fortunate, eloquent, famous, charitable, easy-going and likes humour. Parvata means a mountain."
+      },
+      {
+        "name": "kemadruma_yoga",
+        "chart": "D16",
+        "title": "Kemadruma Yoga",
+        "description": "There are no planets other than Sun in the 1st, 2nd and 12th houses from Moon and there are no planets other than Moon in the quadrants from lagna",
+        "effect": "You are unlucky, bereft of intelligence and learning and afflicted by poverty and trouble. This bad yoga kills the results of other good yogas in the chart, especially Chandra yogas (if any). You have to work hard and succeed through great efforts."
+      },
+      {
+        "name": "chandra_mangala_yoga",
+        "chart": "D3",
+        "title": "Chandra Mangala Yoga",
+        "description": "Moon and Mars are together (in one sign).",
+        "effect": "You are worldly wise and materially successful. You may earn money through unscrupulous means. You may treat mother or other women badly."
+      },
+      {
+        "name": "ruchaka_yoga",
+        "chart": "D12",
+        "title": "Ruchaka Yoga",
+        "description": "Mars is in a quadrant in own sign or exaltation sign.",
+        "effect": "You are a person of fiery nature. You have a lot of enthusiasm. You are a natural leader. You love to fight wars and you will be victorious over enemies. You are discriminative and a devotee of learned people. You are well-versed in occult sciences. You have good taste. You will be always successful."
+      },
+      {
+        "name": "go_yoga",
+        "chart": "D8",
+        "title": "Go Yoga",
+        "description": "If (1) Jupiter is strong in his moolatrikona, (2) the lord of the 2nd house is with Jupiter, and, (3) lagna lord is exalted, then this yoga is present.",
+        "effect": "One born with this yoga is from a respectable family. Person is wealthy and resepcted by all. Go means a cow."
+      },
+      {
+        "name": "koorma_yoga",
+        "chart": "D4",
+        "title": "Koorma Yoga",
+        "description": "If (1) the 5th, 6th and 7th houses are occupied by benefics who are in own, exaltation or friendly signs and (2) the 1st, 3rd and 11th houses are occupied by malefics who are in own or exaltation signs, then this yoga is present.",
+        "effect": "One born with this yoga becomes a king. Person has piety and character. Person is happy, helpful and famous. Koorma means a tortoise."
+      },
+      {
+        "name": "vimala_yoga",
+        "chart": "D3",
+        "title": "Vimala Yoga",
+        "description": "If the 12th lord occupies the 12th house, then this yoga is present.",
+        "effect": "One born with this yoga is noble, frugal, happy and independent. Vimala means pure."
+      }
+    ]
+  },
+  "doshas": {
+    "total_analyzed": 8,
+    "total_present": 2,
+    "present_doshas": [
+      {
+        "name": "Pitru Dosha",
+        "present": true,
+        "description": "Pitru Dosha is a planetary flaw that means a karmic debt of the ancestors, which is to be paid by the person afflicted with Pitru Dosha in the Kundli. It is formed when your forefathers have committed any mistakes, crimes, or sins in their life journey. In return, you have to pay the karmic debt by experiencing different challenges or punishments in your life. This Dosha is created when Sun or Moon are in conjunction or aspects Rahu or Ketu in your birth chart. The malefic effects of this Dosha become severe when the conjunction takes place in the 1st, 5th, 8th, or 9th house of the birth chart. Hence, if you are facing never-ending troubles, Pitru Dosha may be the reason for the pain and agony in your life.  There is pitru dosha in this horoscope for the following reasons:Either sun, moon or Rahu is in ninth house.Ketu is in the fourth house.Either sun, moon, rahu or ketu has been afflicted by malefic planets like Mars or Saturn"
+      },
+      {
+        "name": "Guru Chandala Dosha",
+        "present": true,
+        "description": "There is Guru Chandal dosha in this horoscope. In the birth chart, Chandal Dosha occurs when the planet Jupiter is in conjunction with the malefic planets Rahu or Ketu. Jupiter is called Guru in Vedic Astrology. Chandal refers to an Asura, which is Rahu. Hence, the Dosha is also known as Guru Chandal Dosha. The Dosha can cause malefic effects in the native’s life. Alternatively, if Jupiter is strong, this will become Guru-Chandal-Yoga. However, this Dosha is not very malefic in all houses, and if Jupiter is stronger and well placed, and can control Rahu, then the native could go a long way with minimal loss. Jupiter combined with Ketu is not considered Chandal Dosha by astrologers in the Northern part of India. It makes the native more spiritual and isolated from the world.In your horoscope, Jupiter is stronger than Ketu. So it becomes Guru-Chandal-Yoga for you.Jupiter and Rahu or Ketu in the 11th house will give you a good social image, affection towards children but you will run after wealth all your life."
+      }
+    ],
+    "all_doshas": [
+      {
+        "name": "Kala Sarpa Dosha",
+        "present": false,
+        "description": "There is no Kala Sarpa Dosha in this horoscope."
+      },
+      {
+        "name": "Manglik Dosha",
+        "present": false,
+        "description": "There is no Manglik/Mars dosha in this horoscope."
+      },
+      {
+        "name": "Pitru Dosha",
+        "present": true,
+        "description": "Pitru Dosha is a planetary flaw that means a karmic debt of the ancestors, which is to be paid by the person afflicted with Pitru Dosha in the Kundli. It is formed when your forefathers have committed any mistakes, crimes, or sins in their life journey. In return, you have to pay the karmic debt by experiencing different challenges or punishments in your life. This Dosha is created when Sun or Moon are in conjunction or aspects Rahu or Ketu in your birth chart. The malefic effects of this Dosha become severe when the conjunction takes place in the 1st, 5th, 8th, or 9th house of the birth chart. Hence, if you are facing never-ending troubles, Pitru Dosha may be the reason for the pain and agony in your life.  There is pitru dosha in this horoscope for the following reasons:Either sun, moon or Rahu is in ninth house.Ketu is in the fourth house.Either sun, moon, rahu or ketu has been afflicted by malefic planets like Mars or Saturn"
+      },
+      {
+        "name": "Guru Chandala Dosha",
+        "present": true,
+        "description": "There is Guru Chandal dosha in this horoscope. In the birth chart, Chandal Dosha occurs when the planet Jupiter is in conjunction with the malefic planets Rahu or Ketu. Jupiter is called Guru in Vedic Astrology. Chandal refers to an Asura, which is Rahu. Hence, the Dosha is also known as Guru Chandal Dosha. The Dosha can cause malefic effects in the native’s life. Alternatively, if Jupiter is strong, this will become Guru-Chandal-Yoga. However, this Dosha is not very malefic in all houses, and if Jupiter is stronger and well placed, and can control Rahu, then the native could go a long way with minimal loss. Jupiter combined with Ketu is not considered Chandal Dosha by astrologers in the Northern part of India. It makes the native more spiritual and isolated from the world.In your horoscope, Jupiter is stronger than Ketu. So it becomes Guru-Chandal-Yoga for you.Jupiter and Rahu or Ketu in the 11th house will give you a good social image, affection towards children but you will run after wealth all your life."
+      },
+      {
+        "name": "Ganda Moola Dosha",
+        "present": false,
+        "description": "There is no ganda moola dosha in this horoscope."
+      },
+      {
+        "name": "Kalathra Dosha",
+        "present": false,
+        "description": "There is no kalathra dosha in this horoscope."
+      },
+      {
+        "name": "Ghata Dosha",
+        "present": false,
+        "description": "There is no ghata dosha in this horoscope."
+      },
+      {
+        "name": "Shrapit Dosha",
+        "present": false,
+        "description": "There is no shrapit dosha in this horoscope"
+      }
+    ]
+  },
+  "summary": {
+    "charts_calculated": [
+      "D1 Rasi",
+      "D9 Navamsa",
+      "D10 Dasamsa"
+    ],
+    "maha_dasha_periods": 9,
+    "antardasha_periods": 81,
+    "bhinna_ashtakavarga_planets": 7,
+    "yogas_present": 0,
+    "doshas_present": 2,
+    "current_maha_dasha": "Rahu",
+    "strongest_planet_ashtakavarga": "Jupiter"
+  }
+}
