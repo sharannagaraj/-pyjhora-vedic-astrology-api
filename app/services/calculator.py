@@ -1003,6 +1003,101 @@ class PyJHoraCalculator:
             "next_entries": entries[:num_entries]
         }
 
+    def calculate_bhava_chalit(self) -> Dict:
+        """Calculate Bhava Chalit Chart (house cusp-based planetary placement)"""
+        # Get house cusps (Bhava Madhya)
+        house_cusps = drik.bhaava_madhya(self.jd, self.place, bhava_method=1)
+
+        # Get Rasi chart for planetary positions
+        chart_data = charts.rasi_chart(self.jd, self.place)
+        parsed, asc_sign, asc_deg = self.parse_chart_data(chart_data)
+
+        # Calculate which house each planet falls in based on cusps
+        planets_by_house = {i: [] for i in range(1, 13)}
+        planets_list = []
+
+        for planet_id in range(9):  # 0-8 (Sun to Ketu)
+            if planet_id in parsed:
+                sign_id, longitude_in_sign = parsed[planet_id]
+                abs_longitude = sign_id * 30 + longitude_in_sign
+
+                # Find which house the planet is in based on cusps
+                planet_house = None
+                for i in range(12):
+                    cusp_start = house_cusps[i]
+                    cusp_end = house_cusps[(i + 1) % 12]
+
+                    # Handle wrap-around at 0°/360°
+                    if cusp_start < cusp_end:
+                        if cusp_start <= abs_longitude < cusp_end:
+                            planet_house = i + 1
+                            break
+                    else:  # Wraps around 360°
+                        if abs_longitude >= cusp_start or abs_longitude < cusp_end:
+                            planet_house = i + 1
+                            break
+
+                deg = int(longitude_in_sign)
+                minutes = int((longitude_in_sign - deg) * 60)
+
+                planet_info = {
+                    "planet": PLANET_NAMES[planet_id],
+                    "sign": SIGN_NAMES[sign_id],
+                    "sign_id": sign_id,
+                    "longitude": round(longitude_in_sign, 4),
+                    "degree": deg,
+                    "minute": minutes,
+                    "absolute_longitude": round(abs_longitude, 4),
+                    "house": planet_house
+                }
+
+                planets_list.append(planet_info)
+                if planet_house:
+                    planets_by_house[planet_house].append({
+                        "planet": PLANET_NAMES[planet_id],
+                        "degree": deg,
+                        "minute": minutes
+                    })
+
+        # Format house cusps
+        house_cusps_formatted = []
+        for i, cusp_long in enumerate(house_cusps, start=1):
+            sign_id = int(cusp_long / 30)
+            degree_in_sign = cusp_long % 30
+            deg = int(degree_in_sign)
+            minutes = int((degree_in_sign - deg) * 60)
+
+            house_cusps_formatted.append({
+                "house": i,
+                "cusp_sign": SIGN_NAMES[sign_id],
+                "cusp_sign_id": sign_id,
+                "cusp_degree": round(degree_in_sign, 4),
+                "cusp_degree_int": deg,
+                "cusp_minute": minutes,
+                "cusp_absolute_longitude": round(cusp_long, 4),
+                "planets": planets_by_house[i]
+            })
+
+        return {
+            "status": "success",
+            "chart_type": "BHAVA_CHALIT",
+            "birth_data": self.birth_data,
+            "ascendant": {
+                "sign": SIGN_NAMES[asc_sign] if asc_sign is not None else "Unknown",
+                "sign_id": asc_sign,
+                "degree": round(asc_deg, 4) if asc_deg is not None else 0
+            },
+            "house_cusps": house_cusps_formatted,
+            "planets": planets_list,
+            "calculation_info": {
+                "ayanamsa": self.ayanamsa,
+                "ayanamsa_value": round(self.ayanamsa_value, 4),
+                "julian_day": round(self.jd, 6),
+                "bhava_method": "Swiss Ephemeris (Method 1)",
+                "note": "Bhava Chalit shows planetary placement based on house cusps (Bhava Madhya), different from Rasi chart which uses sign boundaries"
+            }
+        }
+
     @staticmethod
     def _get_nakshatra_name(nak_num: int) -> str:
         """Get nakshatra name from number"""

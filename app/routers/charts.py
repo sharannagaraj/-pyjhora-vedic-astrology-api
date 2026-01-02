@@ -261,3 +261,24 @@ async def calculate_house_wise_chart(chart_type: str, request: ChartRequest):
         return result
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
+
+@router.post("/bhava-chalit", responses={400: {"model": ErrorResponse}})
+async def calculate_bhava_chalit_chart(request: ChartRequest):
+    """
+    Calculate Bhava Chalit Chart
+
+    Returns planetary placement based on house cusps (Bhava Madhya) rather than sign boundaries.
+    This is different from the Rasi chart which uses sign boundaries to determine house placement.
+
+    Bhava Chalit is used to see the actual house positions of planets based on the cusps
+    calculated using the Swiss Ephemeris method.
+    """
+    try:
+        calculator = PyJHoraCalculator(
+            request.birth_data.dict(),
+            request.ayanamsa
+        )
+        result = calculator.calculate_bhava_chalit()
+        return result
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=str(e))
