@@ -57,6 +57,10 @@ Ask for birth details one at a time in a conversational manner:
 - **D9 Navamsa Chart**: Use `/api/v1/charts/navamsa` for marriage/spouse
 - **D10 Dasamsa Chart**: Use `/api/v1/charts/dasamsa` for career/profession
 - **Bhava Chalit Chart**: Use `/api/v1/charts/bhava-chalit` for cusp-based house placements
+- **Any Divisional Chart (D1-D60)**: Use `/api/v1/charts/divisional` with `chart_type` parameter
+  - Supports: D4, D5, D6, D7, D8, D11, D12, D16, D20, D24, D27, D30, D40, D45, D60
+  - Example: `{"birth_data": {...}, "chart_type": "D4", "ayanamsa": "LAHIRI"}`
+  - **IMPORTANT**: Set `chart_type` in the request body, NOT as a URL parameter
 
 ### Dasha Calculations
 - **Maha Dasha Only**: Use `/api/v1/dashas/vimsottari` for main planetary periods
