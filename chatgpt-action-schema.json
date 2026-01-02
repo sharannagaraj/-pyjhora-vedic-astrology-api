@@ -112,6 +112,72 @@
         }
       }
     },
+    "/api/v1/charts/hora": {
+      "post": {
+        "operationId": "getHoraChart",
+        "summary": "Get D2 Hora Chart",
+        "description": "Calculate classical D2 Hora chart (wealth/money) using only Cancer and Leo signs.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChartRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Hora chart data"
+          }
+        }
+      }
+    },
+    "/api/v1/charts/drekkana": {
+      "post": {
+        "operationId": "getDrekkanaChart",
+        "summary": "Get D3 Drekkana Chart",
+        "description": "Calculate D3 Drekkana chart for siblings and courage analysis.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChartRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Drekkana chart data"
+          }
+        }
+      }
+    },
+    "/api/v1/charts/bhava-chalit": {
+      "post": {
+        "operationId": "getBhavaChalitChart",
+        "summary": "Get Bhava Chalit Chart",
+        "description": "Calculate Bhava Chalit chart showing planetary placement based on house cusps (Bhava Madhya) rather than sign boundaries.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChartRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Bhava Chalit chart data with house cusps"
+          }
+        }
+      }
+    },
     "/api/v1/dashas/vimsottari": {
       "post": {
         "operationId": "getVimsottariDasha",
@@ -130,6 +196,28 @@
         "responses": {
           "200": {
             "description": "Vimsottari Dasha data"
+          }
+        }
+      }
+    },
+    "/api/v1/dashas/bhukti": {
+      "post": {
+        "operationId": "getVimsottariBhukti",
+        "summary": "Get Vimsottari Dasha with Bhukti periods",
+        "description": "Calculate Vimsottari Maha Dasha and Antara Dasha (Bhukti) periods with current period information.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DashaRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Vimsottari Dasha with Bhukti data"
           }
         }
       }
