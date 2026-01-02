@@ -71,6 +71,25 @@ async def health_check():
         "service": "pyjhora-api"
     }
 
+@app.get("/wake-up")
+async def wake_up():
+    """Wake-up endpoint to pre-load PyJHora libraries (faster subsequent requests)"""
+    try:
+        # Import PyJHora to warm up the service
+        from jhora.panchanga import drik
+        from jhora.horoscope.chart import charts
+        return {
+            "status": "awake",
+            "service": "pyjhora-api",
+            "message": "PyJHora libraries loaded successfully"
+        }
+    except Exception as e:
+        return {
+            "status": "warming_up",
+            "service": "pyjhora-api",
+            "message": str(e)
+        }
+
 @app.get("/api/v1/ayanamsa/list")
 async def list_ayanamsa_systems():
     """List available Ayanamsa systems"""

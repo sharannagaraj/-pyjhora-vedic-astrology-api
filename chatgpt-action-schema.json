@@ -1,0 +1,348 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "PyJHora Vedic Astrology API",
+    "description": "RESTful API for comprehensive Vedic astrology calculations including birth charts, dashas, yogas, doshas, and ashtakavarga analysis.",
+    "version": "1.2.0"
+  },
+  "servers": [
+    {
+      "url": "https://pyjhora-api-9bu4.onrender.com",
+      "description": "Production server"
+    }
+  ],
+  "paths": {
+    "/wake-up": {
+      "get": {
+        "operationId": "wakeUpService",
+        "summary": "Wake up the astrology service",
+        "description": "Pre-loads PyJHora libraries to speed up subsequent requests. Call this first if the service might be asleep (cold start).",
+        "responses": {
+          "200": {
+            "description": "Service is awake and ready"
+          }
+        }
+      }
+    },
+    "/api/v1/comprehensive/full-analysis": {
+      "post": {
+        "operationId": "getFullVedicAnalysis",
+        "summary": "Get complete Vedic astrology analysis",
+        "description": "Returns comprehensive analysis including D1/D9/D10 charts, Vimsottari Dasha, Ashtakavarga, Yogas, and Doshas in one API call.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChartRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful response with complete analysis"
+          }
+        }
+      }
+    },
+    "/api/v1/charts/rasi": {
+      "post": {
+        "operationId": "getRasiChart",
+        "summary": "Get D1 Rasi (Birth) Chart",
+        "description": "Calculate birth chart with planet positions and ascendant.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChartRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Rasi chart data"
+          }
+        }
+      }
+    },
+    "/api/v1/charts/navamsa": {
+      "post": {
+        "operationId": "getNavamsaChart",
+        "summary": "Get D9 Navamsa Chart",
+        "description": "Calculate Navamsa chart for marriage and spouse analysis.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChartRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Navamsa chart data"
+          }
+        }
+      }
+    },
+    "/api/v1/charts/dasamsa": {
+      "post": {
+        "operationId": "getDasamsaChart",
+        "summary": "Get D10 Dasamsa Chart",
+        "description": "Calculate Dasamsa chart for career and profession analysis.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChartRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Dasamsa chart data"
+          }
+        }
+      }
+    },
+    "/api/v1/dashas/vimsottari": {
+      "post": {
+        "operationId": "getVimsottariDasha",
+        "summary": "Get Vimsottari Dasha periods",
+        "description": "Calculate Vimsottari Maha Dasha periods with current dasha information.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DashaRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Vimsottari Dasha data"
+          }
+        }
+      }
+    },
+    "/api/v1/yogas/": {
+      "post": {
+        "operationId": "getYogas",
+        "summary": "Get all Yogas",
+        "description": "Calculate all planetary yogas including Pancha Mahapurusha, Raja Yogas, and Dhana Yogas.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChartRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Yogas analysis"
+          }
+        }
+      }
+    },
+    "/api/v1/doshas/": {
+      "post": {
+        "operationId": "getDoshas",
+        "summary": "Get all Doshas",
+        "description": "Calculate doshas including Kala Sarpa, Manglik, Pitru, and other afflictions.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChartRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Doshas analysis"
+          }
+        }
+      }
+    },
+    "/api/v1/strength/ashtakavarga": {
+      "post": {
+        "operationId": "getAshtakavarga",
+        "summary": "Get Ashtakavarga analysis",
+        "description": "Calculate Bhinna and Sarvashtakavarga (bindus strength system).",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChartRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Ashtakavarga data"
+          }
+        }
+      }
+    },
+    "/api/v1/panchanga/extended": {
+      "post": {
+        "operationId": "getExtendedPanchanga",
+        "summary": "Get extended Panchanga",
+        "description": "Calculate Panchanga with Rahu Kaal, Abhijit Muhurta, and auspicious timings.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChartRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Extended Panchanga data"
+          }
+        }
+      }
+    },
+    "/api/v1/compatibility/marriage": {
+      "post": {
+        "operationId": "getMarriageCompatibility",
+        "summary": "Get marriage compatibility",
+        "description": "Calculate Ashtakoota compatibility score for marriage (max 36 points).",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CompatibilityRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Compatibility analysis"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "BirthData": {
+        "type": "object",
+        "required": ["date", "time", "timezone_offset", "latitude", "longitude"],
+        "properties": {
+          "date": {
+            "type": "string",
+            "description": "Birth date in YYYY-MM-DD format",
+            "example": "1967-12-06"
+          },
+          "time": {
+            "type": "string",
+            "description": "Birth time in HH:MM:SS format (24-hour)",
+            "example": "16:10:00"
+          },
+          "timezone_offset": {
+            "type": "number",
+            "description": "Timezone offset from UTC (e.g., 5.5 for IST)",
+            "example": 5.5
+          },
+          "latitude": {
+            "type": "number",
+            "description": "Latitude in decimal degrees",
+            "example": 12.9716
+          },
+          "longitude": {
+            "type": "number",
+            "description": "Longitude in decimal degrees",
+            "example": 77.5946
+          },
+          "place_name": {
+            "type": "string",
+            "description": "Place name (optional)",
+            "example": "Bangalore, India"
+          }
+        }
+      },
+      "ChartRequest": {
+        "type": "object",
+        "required": ["birth_data"],
+        "properties": {
+          "birth_data": {
+            "$ref": "#/components/schemas/BirthData"
+          },
+          "ayanamsa": {
+            "type": "string",
+            "description": "Ayanamsa system (default: LAHIRI)",
+            "example": "LAHIRI",
+            "default": "LAHIRI"
+          },
+          "chart_type": {
+            "type": "string",
+            "description": "Chart type (D1, D9, D10, etc.)",
+            "example": "D1",
+            "default": "D1"
+          }
+        }
+      },
+      "DashaRequest": {
+        "type": "object",
+        "required": ["birth_data"],
+        "properties": {
+          "birth_data": {
+            "$ref": "#/components/schemas/BirthData"
+          },
+          "ayanamsa": {
+            "type": "string",
+            "description": "Ayanamsa system",
+            "example": "LAHIRI",
+            "default": "LAHIRI"
+          },
+          "dasha_system": {
+            "type": "string",
+            "description": "Dasha system type",
+            "example": "VIMSOTTARI",
+            "default": "VIMSOTTARI"
+          }
+        }
+      },
+      "CompatibilityRequest": {
+        "type": "object",
+        "required": ["boy_birth_data", "girl_birth_data"],
+        "properties": {
+          "boy_birth_data": {
+            "$ref": "#/components/schemas/BirthData"
+          },
+          "girl_birth_data": {
+            "$ref": "#/components/schemas/BirthData"
+          },
+          "ayanamsa": {
+            "type": "string",
+            "description": "Ayanamsa system",
+            "example": "LAHIRI",
+            "default": "LAHIRI"
+          }
+        }
+      }
+    }
+  }
+}
