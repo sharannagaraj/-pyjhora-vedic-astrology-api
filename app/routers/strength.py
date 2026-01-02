@@ -58,3 +58,27 @@ async def calculate_shadbala(request: ChartRequest):
         return result
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
+
+@router.post("/bhava-bala", responses={400: {"model": ErrorResponse}})
+async def calculate_bhava_bala(request: ChartRequest):
+    """
+    Calculate Bhava Bala (House Strength)
+
+    Bhava Bala measures the strength of each of the 12 houses based on:
+    - House lord strength
+    - Planets aspecting the house
+    - Planets occupying the house
+    - Bhava Dig Bala (directional strength of houses)
+
+    Returns strength values for all 12 houses.
+    Stronger houses give better results in their significations.
+    """
+    try:
+        calculator = PyJHoraCalculator(
+            request.birth_data.dict(),
+            request.ayanamsa
+        )
+        result = calculator.calculate_bhava_bala()
+        return result
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=str(e))
