@@ -1005,14 +1005,17 @@ class PyJHoraCalculator:
 
     def calculate_bhava_chalit(self) -> Dict:
         """Calculate Bhava Chalit Chart (house cusp-based planetary placement)"""
+        # Use PyJHora's built-in bhava_chart_houses function
+        bhava_houses_dict = charts.bhava_chart_houses(self.jd, self.place, self.ayanamsa)
+
         # Get house cusps (Bhava Madhya)
         house_cusps = drik.bhaava_madhya(self.jd, self.place, bhava_method=1)
 
-        # Get Rasi chart for planetary positions
+        # Get Rasi chart for planetary positions (for sign/degree info)
         chart_data = charts.rasi_chart(self.jd, self.place)
         parsed, asc_sign, asc_deg = self.parse_chart_data(chart_data)
 
-        # Calculate which house each planet falls in based on cusps
+        # Build planets list using bhava houses from PyJHora
         planets_by_house = {i: [] for i in range(1, 13)}
         planets_list = []
 
@@ -1021,21 +1024,12 @@ class PyJHoraCalculator:
                 sign_id, longitude_in_sign = parsed[planet_id]
                 abs_longitude = sign_id * 30 + longitude_in_sign
 
-                # Find which house the planet is in based on cusps
-                planet_house = None
-                for i in range(12):
-                    cusp_start = house_cusps[i]
-                    cusp_end = house_cusps[(i + 1) % 12]
-
-                    # Handle wrap-around at 0°/360°
-                    if cusp_start < cusp_end:
-                        if cusp_start <= abs_longitude < cusp_end:
-                            planet_house = i + 1
-                            break
-                    else:  # Wraps around 360°
-                        if abs_longitude >= cusp_start or abs_longitude < cusp_end:
-                            planet_house = i + 1
-                            break
+                # Get bhava house from PyJHora's function (0-indexed, so add 1)
+                bhava_house_data = bhava_houses_dict.get(planet_id)
+                if bhava_house_data:
+                    planet_house = bhava_house_data[0] + 1  # Convert 0-indexed to 1-indexed
+                else:
+                    planet_house = None
 
                 deg = int(longitude_in_sign)
                 minutes = int((longitude_in_sign - deg) * 60)
@@ -1093,8 +1087,8 @@ class PyJHoraCalculator:
                 "ayanamsa": self.ayanamsa,
                 "ayanamsa_value": round(self.ayanamsa_value, 4),
                 "julian_day": round(self.jd, 6),
-                "bhava_method": "Swiss Ephemeris (Method 1)",
-                "note": "Bhava Chalit shows planetary placement based on house cusps (Bhava Madhya), different from Rasi chart which uses sign boundaries"
+                "bhava_method": "PyJHora built-in bhava_chart_houses",
+                "note": "Bhava Chalit shows planetary placement based on house cusps (Bhava Madhya), different from Rasi chart which uses sign boundaries. Uses PyJHora's native calculation for accuracy."
             }
         }
 
