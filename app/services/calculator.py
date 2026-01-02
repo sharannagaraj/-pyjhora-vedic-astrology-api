@@ -269,8 +269,9 @@ class PyJHoraCalculator:
         ]
 
         # Get dasha data
-        dasha_years = {8: 7, 3: 20, 0: 6, 1: 10, 2: 7, 7: 18, 4: 16, 6: 19, 5: 17}
-        nakshatra_lords = [8, 3, 0, 1, 2, 7, 4, 6, 5] * 3
+        # Correct Vimsottari sequence: Ketu -> Venus -> Sun -> Moon -> Mars -> Rahu -> Jupiter -> Saturn -> Mercury
+        dasha_years = {8: 7, 5: 20, 0: 6, 1: 10, 2: 7, 7: 18, 4: 16, 6: 19, 3: 17}
+        nakshatra_lords = [8, 5, 0, 1, 2, 7, 4, 6, 3] * 3
         starting_lord = nakshatra_lords[nakshatra_num]
 
         # Calculate elapsed years in current dasha
@@ -282,10 +283,11 @@ class PyJHoraCalculator:
         birth_date_obj = date(year, month, day)
 
         # Create sequence starting from birth lord
+        # Correct Vimsottari sequence: Ketu -> Venus -> Sun -> Moon -> Mars -> Rahu -> Jupiter -> Saturn -> Mercury
         lord_sequence = []
         found_start = False
         for i in range(2):
-            for lord in [8, 3, 0, 1, 2, 7, 4, 6, 5]:
+            for lord in [8, 5, 0, 1, 2, 7, 4, 6, 3]:
                 if lord == starting_lord or found_start:
                     found_start = True
                     lord_sequence.append(lord)
@@ -357,7 +359,8 @@ class PyJHoraCalculator:
             "Shravana", "Dhanishta", "Shatabhisha", "Purva Bhadrapada",
             "Uttara Bhadrapada", "Revati"
         ]
-        nakshatra_lords = [8, 3, 0, 1, 2, 7, 4, 6, 5] * 3
+        # Correct Vimsottari sequence: Ketu -> Venus -> Sun -> Moon -> Mars -> Rahu -> Jupiter -> Saturn -> Mercury
+        nakshatra_lords = [8, 5, 0, 1, 2, 7, 4, 6, 3] * 3
         starting_lord = nakshatra_lords[nakshatra_num]
 
         # Get Bhukti periods from PyJHora
