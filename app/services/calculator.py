@@ -27,6 +27,12 @@ CHART_FACTORS = {
     "D27": 27, "D30": 30, "D60": 60
 }
 
+# D2 Hora uses only Cancer and Leo
+HORA_SIGNS = {
+    "Cancer": 3,   # Sign ID for Cancer
+    "Leo": 4       # Sign ID for Leo
+}
+
 class PyJHoraCalculator:
     """PyJHora calculation wrapper"""
 
@@ -96,7 +102,13 @@ class PyJHoraCalculator:
 
     def calculate_chart(self, chart_type: str = "D1") -> Dict:
         """Calculate specified divisional chart"""
-        chart_factor = CHART_FACTORS.get(chart_type.upper(), 1)
+        chart_type = chart_type.upper()
+
+        # Special handling for D2 Hora - use classical method
+        if chart_type == "D2":
+            return self.calculate_classical_hora()
+
+        chart_factor = CHART_FACTORS.get(chart_type, 1)
 
         # Get chart from PyJHora
         if chart_factor == 1:
@@ -145,6 +157,88 @@ class PyJHoraCalculator:
                 "ayanamsa_value": round(self.ayanamsa_value, 4),
                 "julian_day": round(self.jd, 6),
                 "divisional_factor": chart_factor
+            }
+        }
+
+    def calculate_classical_hora(self) -> Dict:
+        """
+        Calculate Classical D2 Hora Chart
+
+        In classical Hora, only Cancer (Moon) and Leo (Sun) are used.
+        Rule:
+        - Odd signs (Aries, Gemini, Leo, Libra, Sagittarius, Aquarius):
+          First 15° = Leo, Last 15° = Cancer
+        - Even signs (Taurus, Cancer, Virgo, Scorpio, Capricorn, Pisces):
+          First 15° = Cancer, Last 15° = Leo
+        """
+        # Get Rasi chart for planetary positions
+        chart_data = charts.rasi_chart(self.jd, self.place)
+        parsed, asc_sign, asc_deg = self.parse_chart_data(chart_data)
+
+        # Calculate Hora ascendant
+        # Ascendant follows the same rule as planets
+        is_odd_asc = (asc_sign % 2 == 0)  # Aries=0 (odd), Taurus=1 (even), etc.
+        if is_odd_asc:
+            hora_asc_sign = HORA_SIGNS["Leo"] if asc_deg < 15 else HORA_SIGNS["Cancer"]
+        else:
+            hora_asc_sign = HORA_SIGNS["Cancer"] if asc_deg < 15 else HORA_SIGNS["Leo"]
+
+        # Calculate Hora positions for all planets
+        planets_list = []
+        for planet_id in range(9):  # 0-8 (Sun to Ketu)
+            if planet_id in parsed:
+                sign_id, longitude_in_sign = parsed[planet_id]
+
+                # Apply classical Hora rule
+                is_odd_sign = (sign_id % 2 == 0)  # Aries=0 (odd), Taurus=1 (even)
+
+                if is_odd_sign:  # Odd signs
+                    hora_sign_id = HORA_SIGNS["Leo"] if longitude_in_sign < 15 else HORA_SIGNS["Cancer"]
+                else:  # Even signs
+                    hora_sign_id = HORA_SIGNS["Cancer"] if longitude_in_sign < 15 else HORA_SIGNS["Leo"]
+
+                # Calculate house (Cancer=House 1, Leo=House 2 in Hora)
+                # Assumes ascendant is Cancer (traditional Hora interpretation)
+                if hora_sign_id == HORA_SIGNS["Cancer"]:
+                    house_num = 1
+                elif hora_sign_id == HORA_SIGNS["Leo"]:
+                    house_num = 2
+                else:
+                    house_num = None
+
+                # Keep original degree from D1 for reference
+                deg = int(longitude_in_sign)
+                minutes = int((longitude_in_sign - deg) * 60)
+
+                planets_list.append({
+                    "planet": PLANET_NAMES[planet_id],
+                    "sign": SIGN_NAMES[hora_sign_id],
+                    "sign_id": hora_sign_id,
+                    "longitude": round(longitude_in_sign, 4),
+                    "degree": deg,
+                    "minute": minutes,
+                    "house": house_num,
+                    "d1_sign": SIGN_NAMES[sign_id],  # Original sign from birth chart
+                    "d1_degree": round(longitude_in_sign, 2)
+                })
+
+        return {
+            "status": "success",
+            "chart_type": "D2",
+            "birth_data": self.birth_data,
+            "ascendant": {
+                "sign": SIGN_NAMES[hora_asc_sign],
+                "sign_id": hora_asc_sign,
+                "degree": round(asc_deg, 4)
+            },
+            "planets": planets_list,
+            "calculation_info": {
+                "ayanamsa": self.ayanamsa,
+                "ayanamsa_value": round(self.ayanamsa_value, 4),
+                "julian_day": round(self.jd, 6),
+                "divisional_factor": 2,
+                "method": "Classical Hora",
+                "note": "Classical D2 Hora uses only Cancer (Moon/House 1) and Leo (Sun/House 2). Odd signs: 0-15° = Leo, 15-30° = Cancer. Even signs: 0-15° = Cancer, 15-30° = Leo."
             }
         }
 
